@@ -1,0 +1,11 @@
+<ul>
+    <li (mouseenter)="show('HTML')">HTML</li>
+    <li (mouseenter)="show('CSS')">CSS</li>
+    <li (mouseenter)="show('JS')">JAVASCRIPT</li>
+</ul>
+<div [ngSwitch]="linguagem">
+    <p *ngSwitchCase="'HTML'">Linguagem de marcação</p>
+    <p *ngSwitchCase="'CSS'">Linguagem de estilo</p>
+    <p *ngSwitchCase="'JS'">Linguagem de programação</p>
+    <p *ngSwitchDefault>Não encontrado</p>
+</div>
