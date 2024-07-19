@@ -3,9 +3,10 @@
     <input type="text"   class="form-control" formControlName="nome" placeholder="Nome">
     <input type="number" class="form-control" formControlName="valor" placeholder="Valor">
 
-    <input type="button" class="btn btn-primary" value="Cadastrar" *ngIf="btnCadastrar"> 
-    <input type="button" class="btn btn-primary" value="Alterar" *ngIf="!btnCadastrar"> 
-    <input type="button" class="btn btn-primary" value="Remover" *ngIf="!btnCadastrar"> 
+    <input type="button" class="btn btn-primary" value="Cadastrar" *ngIf="btnCadastrar" (click)="cadastro()"> 
+    <input type="button" class="btn btn-primary" value="Alterar" *ngIf="!btnCadastrar" (click)="alterar()"> 
+    <input type="button" class="btn btn-primary" value="Remover" *ngIf="!btnCadastrar" (click)="excluir()"> 
+    <input type="button" class="btn btn-primary" value="Cancelar" *ngIf="!btnCadastrar" (click)="cancelar()"> 
 </form>
 
 <!-- TABELA -->
@@ -21,10 +22,10 @@
 
     <tbody>
         <tr *ngFor="let item of vetor; index as i">
-            <td>{{item.id}}</td>
+            <td>{{i + 1}}</td>
             <td>{{item.nome}}</td>
             <td>{{item.valor}}</td>
-            <td><button class="btn btn-primary">Selecionar</button></td>
+            <td><button class="btn btn-primary" (click)="selecionarItem(i)">Selecionar</button></td>
         </tr>
     </tbody>
 </table>
