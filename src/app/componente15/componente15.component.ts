@@ -10,5 +10,9 @@ import { Componente15TabelaComponent } from "../componente15-tabela/componente15
   styleUrl: './componente15.component.css'
 })
 export class Componente15Component {
+  nomes:string[] = ['Ralf', 'Juliana', 'Mauricio', 'Renata'];
 
+  cadastrar(nome:string){
+    this.nomes.push(nome);
+  }
 }
