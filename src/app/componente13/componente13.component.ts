@@ -35,11 +35,20 @@ export class Componente13Component {
   }
 
   cadastro(){
-    this.servico.cadastrar(this.formulario.value as Produto)
-    .subscribe(retorno => {
-      this.vetor.push(retorno);
+    
+    let itemRepetido = this.vetor.findIndex(obj =>{      
+      return this.formulario.value.nome ===obj.nome; 
     });
-    this.formulario.reset();
+
+    console.log(itemRepetido);
+
+    if(itemRepetido === -1){
+      this.servico.cadastrar(this.formulario.value as Produto)
+      .subscribe(retorno => {
+        this.vetor.push(retorno);
+      });
+      this.formulario.reset();
+    }   
   }
 
   selecionarItem(index:number){
