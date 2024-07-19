@@ -68,7 +68,16 @@ export class Componente13Component {
   }
 
   excluir(){
+    this.servico.remover(this.formulario.value.id).subscribe(() => {
 
+      let indiceRemovido = this.vetor.findIndex(obj =>{
+        return this.formulario.value.id ===obj.id;
+      });
+
+      this.vetor.splice(indiceRemovido,1);
+      this.formulario.reset();
+      this.btnCadastrar = true;
+    });
   }
 
   cancelar(){
