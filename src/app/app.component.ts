@@ -14,6 +14,7 @@ import { Componente11Component } from "./componente11/componente11.component";
 import { TestesComponent } from "./testes/testes.component";
 import { Componente12Component } from "./componente12/componente12.component";
 import { Componente13Component } from "./componente13/componente13.component";
+import { Componente14Component } from "./componente14/componente14.component";
 
 
 @Component({
@@ -27,7 +28,7 @@ import { Componente13Component } from "./componente13/componente13.component";
     Componente05Component,
     Componente06Component,
     Componente07Component,
-    Componente08Component, Componente09Component, Componente10Component, Componente11Component, TestesComponent, Componente12Component, Componente13Component],
+    Componente08Component, Componente09Component, Componente10Component, Componente11Component, TestesComponent, Componente12Component, Componente13Component, Componente14Component],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
