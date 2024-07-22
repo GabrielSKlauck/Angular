@@ -17,6 +17,7 @@ import { Componente13Component } from "./componente13/componente13.component";
 import { Componente14Component } from "./componente14/componente14.component";
 import { Componente15Component } from "./componente15/componente15.component";
 import { Componente16Component } from "./componente16/componente16.component";
+import { Componente17Component } from "./componente17/componente17.component";
 
 
 @Component({
@@ -30,7 +31,7 @@ import { Componente16Component } from "./componente16/componente16.component";
     Componente05Component,
     Componente06Component,
     Componente07Component,
-    Componente08Component, Componente09Component, Componente10Component, Componente11Component, TestesComponent, Componente12Component, Componente13Component, Componente14Component, Componente15Component, Componente16Component],
+    Componente08Component, Componente09Component, Componente10Component, Componente11Component, TestesComponent, Componente12Component, Componente13Component, Componente14Component, Componente15Component, Componente16Component, Componente17Component],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
